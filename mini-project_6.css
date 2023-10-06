@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mini-project-6{
+    background-color: #ddd;
+}
+
+.main{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #ddd; */
+}
+.top{
+    flex: .5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enter-task{
+    flex: 4;
+    display: flex;
+    padding: 0 23px;
+    align-items: center;
+    color: #61656A;
+    height: 100%;
+    font-size: 25px;
+    background-color: #313E4F;
+}
+.submit-task,#s-btn{
+    flex: .7;
+    width: 100%;
+    background-color: #20D2AE;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    height: 100%;
+    border: none;
+}
+
+.bottom{
+    flex: 3;
+    flex-direction: column;
+    align-items: center;
+    /* overflow-y: scroll; */
+    display: flex;
+    background-color: white;
+    width: 100%;
+}
+[id^="mytask"]{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    color: #5f5f5f;
+    height: 50px;
+    border-bottom: 2px solid #949292;
+}
+input[type="checkbox"] {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: 23px;
+}
+
+@media (width<300px) {
+    [id^="mytask"]{
+        font-size: 16px;
+    }
+  
+}
+
+@media (width<550px) {
+    .enter-task{
+        flex: 2;
+    }
+}
